@@ -1,0 +1,180 @@
+h1 {
+  font-size: 70px;
+  text-transform: uppercase;
+  position: absolute;
+  top: 54%;
+  transform: translateY(-50%);
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: difference;
+  animation: colorchange 20s infinite alternate linear;
+  z-index: 1;
+  color: #fff;
+}
+@keyframes colorchange {
+  0% {
+    color: blue;
+  }
+  5% {
+    color: lightblue;
+  }
+  10% {
+    color: #8e44ad;
+  }
+  15% {
+    color: cyan;
+  }
+  20% {
+    color: #1abc9c;
+  }
+  25% {
+    color: magento;
+  }
+  30% {
+    color: #d35400;
+  }
+  35% {
+    color: green;
+  }
+  40% {
+    color: rose;
+  }
+  45% {
+    color: purple;
+  }
+  50% {
+    color: yellow;
+  }
+  55%{
+    color: beige;
+  }
+  60% {
+    color: brown;
+  }
+  65% {
+    color: coral;
+  }
+  70% {
+    color: #2980b9;
+  }
+  75% {
+    color: #34495e;
+  }
+  80% {
+    color: #f1c40f;
+  }
+  85% {
+    color: cornsilk;
+  }
+  90% {
+    color: red;
+  }
+  95% {
+    color: steelblue;
+  }
+  100% {
+    color: pink;
+  }
+}
+
+html, body {
+  margin: 0;
+  padding: 0; 
+  background-image: url("https://xatimg.com/image/vLcvK8GviVGu.jpg");
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+#confetti{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+
+a.iprodev {
+  line-height: normal;
+  font-family: Varela Round, sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 13px;
+  color: #A7AAAE;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  border: 1px solid #A7AAAE;
+  padding: 12px 20px 10px;
+  border-radius: 50px;
+  transition: all 10s ease-in-out;
+  text-transform: uppercase;
+}
+a.iprodev:hover {
+  background: #A7AAAE;
+  color: white;
+}
+div {
+  width: 1em;
+  height: 1em;
+  overflow: hidden;
+  line-height: 1em;
+  display: inline-block;
+}
+span {
+  position: relative;
+}
+.animate {
+  -webkit-animation: spinit 2s 5;
+  -moz-animation: spinit 2s 5;
+  animation: spinit 2s 5;
+  position: relative;
+  z-index: 1000;
+}
+@-webkit-keyframes spinit {
+  0% {
+    top: 0em;
+  }
+  50% {
+    top: -5em;
+  }
+  100% {
+    top: -9em;
+  }
+}
+@-moz-keyframes spinit {
+  0% {
+    top: 0em;
+  }
+  50% {
+    top: -5em;
+  }
+  100% {
+    top: -9em;
+  }
+}
+@keyframes spinit {
+  0% {
+    top: 0em;
+  }
+  50% {
+    top: -5em;
+  }
+  100% {
+    top: -9em;
+  }
+}
+
+/* Setting the required value to top will make the spinner end at that number */
+
+#digit1 {
+  top: -5em;
+  /* -4em means 5 will be the number */
+}
+#digit2 {
+  top: 0em;
+}
+#digit3 {
+  top: 0em;
+}
